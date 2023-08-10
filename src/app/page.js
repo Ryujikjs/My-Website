@@ -13,7 +13,11 @@ import oio3 from 'public/oio3.png'
 import fpga1 from 'public/fpga1.jpg'
 import fpga2 from 'public/fpga2.jpg'
 import fpga3 from 'public/fpga3.jpg'
-import fpga4 from 'public/fpga4.jpg'
+import fpga4 from 'public/fpga_greybg.jpg'
+import purelylogo from 'public/purelylogo.png'
+import reactorlogo from 'public/reactorlogo.png'
+import alex from 'public/alex.jpg'
+import mbot from 'public/mbot.jpg'
 
 
 export default function Home() {
@@ -27,9 +31,8 @@ export default function Home() {
       </Head>
 
       <div className='flex pt-10'>
-        
         <main className='bg-white px-20 font-body'>
-          <section className="min-h-screen pb-52">
+          <section className="min-h-screen pb-52 pt-20">
             <div>
               <Image src={ryuji} alt="Ryuji Kow" width={300} height={300} className='rounded-3xl mb-10 border-4 border-black' />
               <h1 className='text-8xl font-bold pb-3'>Ryuji</h1>
@@ -114,6 +117,38 @@ export default function Home() {
                   understanding the effects of certain useful metrics such as, scaling, safety, security, sustainability, societal 
                   impact, fault-tolerant design, etc.</p>
             </div>
+
+            <div className='pb-10'>
+              <div className='flex items-start pt-20'>
+                <Image src={purelylogo} alt="purely logo" className=' mb-10 rounded-full mr-5 w-20 border-black border-4' />
+                <div className=''>
+                  <h2 className='text-2xl font-bold'>Purely Natural Skincare </h2>
+                  <p>Co-Founder</p>
+                  <p>June 2023 - Present</p>
+                </div>
+              </div>
+              <p>At Purely, I've led the development of Shopify, Facebook, Instagram, and Shopee platforms, enhancing the customer experience and driving sales. I've also played a key role in shaping branding and marketing strategies. Additionally, I've managed supply chain operations, optimizing inventory control and logistics for efficiency. </p>
+              <p><a href="https://yourspurely.co/" class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline pt-4">
+              visit website
+                <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+              </a></p>
+            </div>
+  
+
+            <div className='pb-10'>
+              <div className='flex items-start pt-20'>
+                <Image src={reactorlogo} alt="ractor school logo" className=' mb-10 rounded-xl mr-5 w-20 ' />
+                <div className=''>
+                  <h2 className='text-2xl font-bold'>Reactor School</h2>
+                  <p>Trainer & Facilitator</p>
+                  <p>Jan 2022 - June 2022</p>
+                </div>
+              </div>
+              <p>Reactor School provides entrepreneurship education programmes for students that focuses on every aspect of student growth and development. As a trainer, I am Motivated to effectively deliver design thinking training programmes for secondary school students, I have also facilitated hackathon programmes to encourage start-up ideas. </p>
+            </div>
+
             <div className='pb-10'>
               <div className='flex items-start pt-20'>
                 <Image src={halogo} alt="High Achievers Logo" className=' mb-10 rounded-xl mr-5 w-20' />
@@ -143,9 +178,9 @@ export default function Home() {
           </section>
 
           <section id="projects" className='break-after-page pb-20'>
-            <h1 className='text-6xl font-bold mt-11'>Projects</h1>
+            <h1 className='text-6xl font-bold mt-11 mb-10'>Projects</h1>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <h2 className='text-2xl font-bold'>Autocare</h2>
+              <h2 className='text-2xl font-bold'>AUTOCARE</h2>
               <p className='italic'>NUS EG3301R Ideas to Proof-of-Concept</p>
               <p className='italic'>January 2023 - Present</p>
               <p> Autonomous Solution for Transport of Blood Components Within a Hospital Environment</p>
@@ -168,7 +203,7 @@ export default function Home() {
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <h2 className='text-2xl font-bold'>Big PC-Partpicker</h2>
+              <h2 className='text-2xl font-bold'>BIG PC-PARTPICKER</h2>
               <p>Cli Pc Partpicker Application</p>
               <p>January 2023 - April 2023 </p>
               <p> A Command Line Interface (CLI) application that streamlines the process of managing computer builds while
@@ -181,9 +216,15 @@ export default function Home() {
                 <ul className="list-inside mt-2">
                   <li className="list-disc">A command-line application that streamlines the process of managing computer builds while verifying the compatibility of selected components.</li>
                   <li className="list-disc">A simple interface that enables easy customization and organization of PC builds, ensuring optimal performance and budget adherence.</li>
-                  <li className="list-disc">Enhanced ustomizability for advanced users to add custom pc parts to the list of available parts.</li>
+                  <li className="list-disc">Enhanced customizability for advanced users to add custom pc parts to the list of available parts.</li>
                 </ul>
               </div>
+              <p><a href="https://github.com/AY2223S2-CS2113-T12-2/tp" class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline pt-4">
+              Check out the app
+                <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+              </a></p>
             </div>
 
 
@@ -203,11 +244,13 @@ export default function Home() {
                   <li className="list-disc">Local storage of sound files (WAV, MP3, OGG) on Raspberry Pi using pygame library.</li>
                   <li className="list-disc">Optimized button design for rapid response and reliable NFC tag readings.</li>
                 </ul>
+                <br></br>
+                <p>This project was showcased during CDE Day 2023 at the "CDE's Awesome Projects" exhibition.</p>
               </div>
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <h2 className='text-2xl font-bold'>FPGA Project</h2>
+              <h2 className='text-2xl font-bold'>FPGA PROJECT</h2>
               <p className='italic'>NUS EE2026 Digital Design</p>
               <p className='italic'>August 2022 - November 2022</p>
               <p className='italic'>Creative application of concepts covered in module: Typeracer game</p>
@@ -226,10 +269,38 @@ export default function Home() {
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <h2 className='text-2xl font-bold'>ALEX</h2>
-              <p className='italic'>NUS CG2111A Engineering Principles and Practice II</p>
-              <p className='italic'>January 2022 - April 2022</p>
-              <p className='italic'>unmanned search & mapping robot with LiDAR navigation</p>
+              <p className='italic'>NUS CG2111A Project</p>
+              <p className='italic'>August 2022 - November 2022</p>
+              <p className='italic'>Remote Mapping & Exploration Robot</p>
+              <Image src={alex} alt="ALEX" width={500} height={300} className='rounded-xl justify-center mx-auto my-8 ' />
+              <p>Our project focused on creating an autonomous search and mapping robot named "Alex." We utilized LiDAR navigation technology to facilitate exploration and mapping of uncharted areas. This endeavor encompassed the integration of diverse technologies, enabling Alex to efficiently undertake the designated tasks. Moreover, this project provided us with valuable experience in navigating and piloting using laser mapping techniques.  </p>
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold">Key Highlights:</h3>
+                  <ul className="list-inside mt-2">
+                    <li className="list-disc">Attained the second fastest completion time for accurate mapping of the testing area.</li>
+                    <li className="list-disc">Integrated LiDAR, ROS and Hector SLAM to create a capable robot for the task.</li>
+                    <li className='list-disc'>Fine tuning movement of ALEX to allow a clear and distortion free map to be built</li>
+                  </ul>
+                </div>
             </div>
+
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <h2 className='text-2xl font-bold'>MBOT</h2>
+              <p className='italic'>NUS CG1111A Project</p>
+              <p className='italic'>August 2021 - November 2021</p>
+              <p className='italic'>Autonomous Robot</p>
+              <Image src={mbot} alt="MBOT" width={500} height={300} className='rounded-xl justify-center mx-auto ' />
+              <p>Our project focused on enhancing the capabilities of the mBot robot through the implementation of specialized algorithms. We successfully incorporated color sensing, movement control, and IR proximity sensing, allowing the mBot to navigate and interact with its environment more effectively.</p>
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold">Key Highlights:</h3>
+                  <ul className="list-inside mt-2">
+                    <li className="list-disc">Integrated color sensing, movement control, and IR proximity sensing.</li>
+                    <li className="list-disc">Overcame technical challenges such as sensor reliability and ambient lighting variations by implementing innovative solutions.</li>
+                    <li className="list-disc">Achieved the accurate distinction of color challenges, enabling the mBot to navigate through the maze and complete tasks autonomously.</li>
+                  </ul>
+                </div>
+            </div>
+
           </section> 
 
           <section id="skills" className='break-after-page pb-20'>
@@ -263,7 +334,7 @@ export default function Home() {
               <a href="#about">
                 <p className="relative group">
                   <span>About Me</span>
-                  <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/2 group-hover:transition-all"></span>
+                  <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/3 group-hover:transition-all"></span>
                   <span className="absolute -bottom-1 right-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/2 group-hover:transition-all"></span>
                 </p>
               </a>
@@ -272,16 +343,41 @@ export default function Home() {
               <a href="#education">
               <p className="relative group">
                   <span>Education</span>
-                  <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/2 group-hover:transition-all"></span>
+                  <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/3 group-hover:transition-all"></span>
                   <span className="absolute -bottom-1 right-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/2 group-hover:transition-all"></span>
                 </p>
               </a>
             </li>
-            <li className='pb-6 font-bold text-2xl hover:text-blue-500'><a href="#work-experience">Work</a></li>
-            <li className='pb-6 font-bold text-2xl hover:text-blue-500'><a href="#projects">Projects</a></li>
-            <li className='pb-24 font-bold text-2xl hover:text-blue-500'><a href="#skills">Skills</a></li>
+            <li className='pb-6 font-bold text-2xl hover:text-blue-500'>
+              <a href="#work-experience">
+                <p className="relative group">
+                  <span>Work</span>
+                  <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/3 group-hover:transition-all"></span>
+                  <span className="absolute -bottom-1 right-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/2 group-hover:transition-all"></span>
+                </p>
+              </a>
+            </li>
+            <li className='pb-6 font-bold text-2xl hover:text-blue-500'>
+              <a href="#projects">
+                <p className="relative group">
+                  <span>Projects</span>
+                  <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/3 group-hover:transition-all"></span>
+                  <span className="absolute -bottom-1 right-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/2 group-hover:transition-all"></span>
+                </p>
+              </a>
+            </li>
+            <li className='pb-6 font-bold text-2xl hover:text-blue-500'>
+              <a href="#skills">
+                <p className="relative group">
+                  <span>Skills</span>
+                  <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/3 group-hover:transition-all"></span>
+                  <span className="absolute -bottom-1 right-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/2 group-hover:transition-all"></span>
+                </p>
+              </a>
+            </li>
             
           </ul>
+
           <p>ryujikjs@gmail.com</p>
           <p className='pb-3'>+65 9727 8031</p>
 
