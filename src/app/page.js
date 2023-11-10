@@ -18,7 +18,8 @@ import purelylogo from 'public/purelylogo.png'
 import reactorlogo from 'public/reactorlogo.png'
 import alex from 'public/alex.jpg'
 import mbot from 'public/mbot.jpg'
-
+import robot from 'public/autocare_robot.png'
+import monitoring from 'public/monitoring.png'
 
 export default function Home() {
   return (
@@ -210,8 +211,10 @@ export default function Home() {
               <p className='italic'>NUS EG3301R Ideas to Proof-of-Concept</p>
               <p className='italic'>January 2023 - Present</p>
               <p> Autonomous Solution for Transport of Blood Components Within a Hospital Environment</p>
-            
-              <Image src={autocare} alt="Autocare" width={500} height={300} className='rounded-xl justify-center mx-auto my-8' />
+              <div className= 'flex justify-center'>
+                <Image src={robot} alt="Autocare" height={300} className='rounded-xl justify-center my-8 mx-3' />
+                <Image src={monitoring} alt="Autocare" height={300} className='rounded-xl justify-center my-8 mx-3' />
+              </div>
               <p>Our project partners with Singapore General Hospital (SGH) to address the shortage of porters, leading to uncertain delivery times for blood components. 
                 We are developing an autonomous solution to streamline blood transportation, reducing wait times and ensuring efficient and secure delivery. By integrating 
                 advanced technologies, our system navigates the hospital environment, adheres to safety protocols, and frees up porters for essential patient care. Our goal 
@@ -220,7 +223,7 @@ export default function Home() {
                 <h3 className="font-bold">Key Highlights:</h3>
                 <li className="list-disc">Autonomous solution to transport blood components, reducing reliance on human labor.</li>
                 <li className="list-disc">Multi-storage cooler box for efficient and secure transportation of blood products.</li>
-                <li className="list-disc">Advanced mapping and localization features for smooth navigation in the hospital environment.</li>
+                <li className="list-disc">Built Fullstack User Interface and Monitoring page using NextJS and Django Framework.</li>
                 <li className="list-disc">Compliance with hospital policies, ensuring data security and blood product confirmation.</li>
                 <li className="list-disc">Improving patient care by allowing hospital porters to focus on critical tasks.</li>
               </ul>
@@ -336,14 +339,20 @@ export default function Home() {
               <p>C++, C, Python, Verilog, R, Java, Javascript, HTML, CSS</p>
             </div>
             <div className='pb-10'>
+              <h2 className='text-2xl font-bold pb-5'>Franeworks</h2>
+              <p>React, NextJs, Django framework, TailwindCSS, </p>
+            </div>
+            <div className='pb-10'>
               <h2 className='text-2xl font-bold pb-5'>Hardware</h2>
               <p>Arduino, Raspberry Pi, ,LiDAR , FPGA, Esp32, RFID, Stepper Motors(Modbus) </p>
             </div>
             <div className='pb-10'>
               <h2 className='text-2xl font-bold pb-5'>Others</h2>
-              <p>Git, Linux, Microsoft Office, Fusion360, Autodesk Eagle</p>
+              <p>Git, Linux, Microsoft Office, Fusion360, Autodesk Eagle, RESTful API</p>
               <br></br>
               <p>Languages: English, Chinese, Japanese</p>
+              <br></br>
+              <p>Wiley Certified Data Analyst</p>
             </div>
 
           </section>
