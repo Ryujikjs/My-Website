@@ -4,6 +4,7 @@ import ryuji from 'public/ryuji.jpg'
 import nuslogo from 'public/nuslogo1.png'
 import jclogo from 'public/logo.png'
 import feeveologo from 'public/feeveo_logo.jpg'
+import ezlogo from 'public/equityzen_logo.jpg'
 import halogo from 'public/highachievers_logo.jpg'
 import autocare from 'public/autocare.png'
 import bigpp from 'public/bigpp.png'
@@ -44,25 +45,25 @@ export default function Home() {
 
           <section id="about" className='break-after-page pb-20'>
             <div>
-            <h1 className='text-6xl font-bold pb-20'>About Me</h1>
-            <p>
-              As an aspiring Computer Engineer, I am enthusiastic about delving 
-              into the dynamic and ever-evolving world of technology. With a passion for problem-solving 
-              and a strong foundation in mathematics and science, I am eager to apply my skills and 
-              knowledge to contribute to the development of innovative solutions.
-            </p>
-            <br></br>
-            <p>
-              With a keen interest in both hardware and software aspects, I aim to gain a comprehensive 
-              understanding of computer systems, networks, and embedded systems. I aspire to acquire expertise in 
-              programming languages, digital logic design, data structures, and algorithms, as well as exploring 
-              emerging technologies such as artificial intelligence, Internet of Things (IoT).
-            </p>
-            <br></br>
-            <p>Please feel free to explore my portfolio to find out more about my projects and experiences below!</p>
+              <h1 className='text-6xl font-bold pb-20'>About Me</h1>
+              <p>
+                As an aspiring Computer Engineer, I am enthusiastic about delving
+                into the dynamic and ever-evolving world of technology. With a passion for problem-solving
+                and a strong foundation in mathematics and science, I am eager to apply my skills and
+                knowledge to contribute to the development of innovative solutions.
+              </p>
+              <br></br>
+              <p>
+                With a keen interest in both hardware and software aspects, I aim to gain a comprehensive
+                understanding of computer systems, networks, and embedded systems. I aspire to acquire expertise in
+                programming languages, digital logic design, data structures, and algorithms, as well as exploring
+                emerging technologies such as artificial intelligence, Internet of Things (IoT).
+              </p>
+              <br></br>
+              <p>Please feel free to explore my portfolio to find out more about my projects and experiences below!</p>
             </div>
-              <div className='flex justify-center mt-10'>
-              <a href="Ryuji Kow CV.pdf" alt="pdf" className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-5 rounded-full inline-flex items-center mx-4'>Resume PDF</a>
+            <div className='flex justify-center mt-10'>
+              <a href="Ryuji_Jie_Si_KOW_Resume.pdf" alt="pdf" className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-5 rounded-full inline-flex items-center mx-4'>Resume PDF</a>
               <a href="Ryuji's Projects.pdf" alt="projects pdf" className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-5 rounded-full inline-flex items-center mx-4'>Projects PDF</a>
               <a href="https://github.com/Ryujikjs" className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-14 rounded-full inline-flex items-center mx-4'>
                 <svg
@@ -110,6 +111,30 @@ export default function Home() {
 
           <section id="work-experience" className='break-after-page pb-20'>
             <h1 className='text-6xl font-bold mt-11'>Work Experience</h1>
+
+            <div className='pb-10'>
+              <div className='flex items-start pt-20'>
+                <Image src={ezlogo} alt="Feevio Logo" className=' mb-10 rounded-xl mr-5 w-20' />
+                <div className=''>
+                  <h2 className='text-2xl font-bold'>Equityzen</h2>
+                  <p>Software Engineer - Intern</p>
+                  <p>January 2024 - December 2024 (New York)</p>
+                </div>
+              </div>
+              <p>
+                EquityZen is a fintech platform that unlocks liquidity in the private markets by enabling investors to buy and sell pre-IPO shares. Founded in 2013, the company bridges the gap between private companies and investors by offering access to high-growth startups with lower investment minimums. By streamlining secondary transactions, EquityZen empowers employees, shareholders, and investors to participate in the private equity ecosystem before companies go public.
+              </p>
+              <br></br>
+              <p>
+                <ul className="list-inside list-disc mt-2">
+                  <li>Built a RESTful API integrated with Yahoo Finance, enabling seamless access to private equity data.</li>
+                  <li>Developed an Order Book matching system, increasing trade efficiency by 25%.</li>
+                  <li>Optimized site performance, reducing load times by 20% and ensuring scalability for a growing user base.</li>
+                  <li>Delivered key product updates through agile workflows, enhancing system reliability and user experience.</li>
+                </ul>
+              </p>
+            </div>
+
             <div className='pb-10'>
               <div className='flex items-start pt-20'>
                 <Image src={feeveologo} alt="Feevio Logo" className=' mb-10 rounded-xl mr-5 w-20' />
@@ -119,13 +144,13 @@ export default function Home() {
                   <p>Febuary 2023 - April 2023</p>
                 </div>
               </div>
-              <p>A Singapore technology & automation start up aiming to solve neglected problems with 
+              <p>A Singapore technology & automation start up aiming to solve neglected problems with
                 efficient robots and automation products.</p>
-                <br></br>
-                <p>Contributed to the development of an Automated Guided Vehicle (AGV) prototype, focusing 
-                  on the enhancement of its functionality and performance. Collaborated with the team to 
-                  develop and fine-tune the direction control system, utilizing modbus communication to interface 
-                  with stepper motors for precise wheel rotation based on user input.</p>
+              <br></br>
+              <p>Contributed to the development of an Automated Guided Vehicle (AGV) prototype, focusing
+                on the enhancement of its functionality and performance. Collaborated with the team to
+                develop and fine-tune the direction control system, utilizing modbus communication to interface
+                with stepper motors for precise wheel rotation based on user input.</p>
             </div>
 
             <div className='pb-10'>
@@ -137,12 +162,12 @@ export default function Home() {
                   <p>January 2023 - April 2023</p>
                 </div>
               </div>
-                <p>This module will be for the students who have completed EPP I(pre-requisite module) and the project scope 
-                  extends to handle challenges in large-scale systems. Students will first learn the fundamental principles on 
-                  certain advanced concepts and then design and programme a real-world system. The module involves designing a 
-                  complex computer engineering system that facilitates information processing, real-world interfacing, and 
-                  understanding the effects of certain useful metrics such as, scaling, safety, security, sustainability, societal 
-                  impact, fault-tolerant design, etc.</p>
+              <p>This module will be for the students who have completed EPP I(pre-requisite module) and the project scope
+                extends to handle challenges in large-scale systems. Students will first learn the fundamental principles on
+                certain advanced concepts and then design and programme a real-world system. The module involves designing a
+                complex computer engineering system that facilitates information processing, real-world interfacing, and
+                understanding the effects of certain useful metrics such as, scaling, safety, security, sustainability, societal
+                impact, fault-tolerant design, etc.</p>
             </div>
 
             <div className='pb-10'>
@@ -156,13 +181,13 @@ export default function Home() {
               </div>
               <p>At Purely, I've led the development of Shopify, Facebook, Instagram, and Shopee platforms, enhancing the customer experience and driving sales. I've also played a key role in shaping branding and marketing strategies. Additionally, I've managed supply chain operations, optimizing inventory control and logistics for efficiency. </p>
               <p><a href="https://yourspurely.co/" class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline pt-4">
-              visit website
+                visit website
                 <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a></p>
             </div>
-  
+
 
             <div className='pb-10'>
               <div className='flex items-start pt-20'>
@@ -211,13 +236,13 @@ export default function Home() {
               <p className='italic'>NUS EG3301R Ideas to Proof-of-Concept</p>
               <p className='italic'>January 2023 - Present</p>
               <p> Autonomous Solution for Transport of Blood Components Within a Hospital Environment</p>
-              <div className= 'flex justify-center'>
+              <div className='flex justify-center'>
                 <Image src={robot} alt="Autocare" height={300} className='rounded-xl justify-center my-8 mx-3' />
                 <Image src={monitoring} alt="Autocare" height={300} className='rounded-xl justify-center my-8 mx-3' />
               </div>
-              <p>Our project partners with Singapore General Hospital (SGH) to address the shortage of porters, leading to uncertain delivery times for blood components. 
-                We are developing an autonomous solution to streamline blood transportation, reducing wait times and ensuring efficient and secure delivery. By integrating 
-                advanced technologies, our system navigates the hospital environment, adheres to safety protocols, and frees up porters for essential patient care. Our goal 
+              <p>Our project partners with Singapore General Hospital (SGH) to address the shortage of porters, leading to uncertain delivery times for blood components.
+                We are developing an autonomous solution to streamline blood transportation, reducing wait times and ensuring efficient and secure delivery. By integrating
+                advanced technologies, our system navigates the hospital environment, adheres to safety protocols, and frees up porters for essential patient care. Our goal
                 is to improve patient outcomes and enhance the quality of care at SGH.</p>
               <ul className=" mt-6 pb-10 list-inside ">
                 <h3 className="font-bold">Key Highlights:</h3>
@@ -236,7 +261,7 @@ export default function Home() {
               <p>Cli Pc Partpicker Application</p>
               <p>January 2023 - April 2023 </p>
               <p> A Command Line Interface (CLI) application that streamlines the process of managing computer builds while
-              verifying the compatibility of selected components.</p>
+                verifying the compatibility of selected components.</p>
               <br></br>
               <Image src={bigpp} alt="Big PC-Partpicker" width={500} height={300} className='rounded-xl justify-center mx-auto my-8' />
               <p>Big PC Part-Picker (BigPP) is a command-line application crafted with passion for PC enthusiasts and dedicated builders. Our goal is to empower users with a seamless and personalized PC building experience. BigPP streamlines the process of selecting and verifying compatible components, offering a time-saving and cost-effective solution. With a user-friendly interface, it enables easy customization and organization of PC builds, ensuring optimal performance and budget adherence.</p>
@@ -249,9 +274,9 @@ export default function Home() {
                 </ul>
               </div>
               <p><a href="https://ay2223s2-cs2113-t12-2.github.io/tp/" class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline pt-4">
-              Check out the app
+                Check out the app
                 <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a></p>
             </div>
@@ -287,12 +312,12 @@ export default function Home() {
               <p>I successfully completed an FPGA project that integrated a keyboard with a PMOD screen to enable free typing. Additionally, I implemented a Typeracer game with a fixed phrase, displaying the words per minute (WPM) on a seven-segment display upon completion. The system highlighted incorrect keystrokes in red and displayed correctly typed letters in green, providing an engaging and interactive typing experience.</p>
               <div className="mt-6">
                 <h3 className="text-lg font-semibold">Key Highlights:</h3>
-                  <ul className="list-inside mt-2">
-                    <li className="list-disc">Integrated keyboard and PMOD screen with FPGA.</li>
-                    <li className="list-disc">Implemented Typeracer game with fixed phrase,measuring and displaying WPM on a seven-segment display.</li>
-                    <li className="list-disc">Provided real-time feedback with red highlighting for incorrect keystrokes and green highlighting for correct ones.</li>
-                    <li className="list-disc">Delivered an interactive and engaging typing experience with precise performance measurement.</li>
-                  </ul>
+                <ul className="list-inside mt-2">
+                  <li className="list-disc">Integrated keyboard and PMOD screen with FPGA.</li>
+                  <li className="list-disc">Implemented Typeracer game with fixed phrase,measuring and displaying WPM on a seven-segment display.</li>
+                  <li className="list-disc">Provided real-time feedback with red highlighting for incorrect keystrokes and green highlighting for correct ones.</li>
+                  <li className="list-disc">Delivered an interactive and engaging typing experience with precise performance measurement.</li>
+                </ul>
               </div>
             </div>
 
@@ -305,12 +330,12 @@ export default function Home() {
               <p>Our project focused on creating an autonomous search and mapping robot named "Alex." We utilized LiDAR navigation technology to facilitate exploration and mapping of uncharted areas. This endeavor encompassed the integration of diverse technologies, enabling Alex to efficiently undertake the designated tasks. Moreover, this project provided us with valuable experience in navigating and piloting using laser mapping techniques.  </p>
               <div className="mt-6">
                 <h3 className="text-lg font-semibold">Key Highlights:</h3>
-                  <ul className="list-inside mt-2">
-                    <li className="list-disc">Attained the second fastest completion time for accurate mapping of the testing area.</li>
-                    <li className="list-disc">Integrated LiDAR, ROS and Hector SLAM to create a capable robot for the task.</li>
-                    <li className='list-disc'>Fine tuning movement of ALEX to allow a clear and distortion free map to be built</li>
-                  </ul>
-                </div>
+                <ul className="list-inside mt-2">
+                  <li className="list-disc">Attained the second fastest completion time for accurate mapping of the testing area.</li>
+                  <li className="list-disc">Integrated LiDAR, ROS and Hector SLAM to create a capable robot for the task.</li>
+                  <li className='list-disc'>Fine tuning movement of ALEX to allow a clear and distortion free map to be built</li>
+                </ul>
+              </div>
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
@@ -322,15 +347,15 @@ export default function Home() {
               <p>Our project focused on enhancing the capabilities of the mBot robot through the implementation of specialized algorithms. We successfully incorporated color sensing, movement control, and IR proximity sensing, allowing the mBot to navigate and interact with its environment more effectively.</p>
               <div className="mt-6">
                 <h3 className="text-lg font-semibold">Key Highlights:</h3>
-                  <ul className="list-inside mt-2">
-                    <li className="list-disc">Integrated color sensing, movement control, and IR proximity sensing.</li>
-                    <li className="list-disc">Overcame technical challenges such as sensor reliability and ambient lighting variations by implementing innovative solutions.</li>
-                    <li className="list-disc">Achieved the accurate distinction of color challenges, enabling the mBot to navigate through the maze and complete tasks autonomously.</li>
-                  </ul>
-                </div>
+                <ul className="list-inside mt-2">
+                  <li className="list-disc">Integrated color sensing, movement control, and IR proximity sensing.</li>
+                  <li className="list-disc">Overcame technical challenges such as sensor reliability and ambient lighting variations by implementing innovative solutions.</li>
+                  <li className="list-disc">Achieved the accurate distinction of color challenges, enabling the mBot to navigate through the maze and complete tasks autonomously.</li>
+                </ul>
+              </div>
             </div>
 
-          </section> 
+          </section>
 
           <section id="skills" className='break-after-page pb-20'>
             <h1 className='text-6xl font-bold mt-11 pb-20'>Skills</h1>
@@ -357,7 +382,7 @@ export default function Home() {
 
           </section>
 
-         
+
 
         </main>
 
@@ -376,7 +401,7 @@ export default function Home() {
             </li>
             <li className='pb-6 font-bold text-2xl hover:text-blue-500'>
               <a href="#education">
-              <p className="relative group">
+                <p className="relative group">
                   <span>Education</span>
                   <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/3 group-hover:transition-all"></span>
                   <span className="absolute -bottom-1 right-1/2 w-0 h-1 bg-blue-500 group-hover:w-1/2 group-hover:transition-all"></span>
@@ -410,11 +435,11 @@ export default function Home() {
                 </p>
               </a>
             </li>
-            
+
           </ul>
           <p>ryujikjs@gmail.com</p>
           <p className='pb-3'>+65 9727 8031</p>
-          
+
         </nav>
       </div>
     </div>
