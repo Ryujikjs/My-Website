@@ -63,7 +63,7 @@ export default function Home() {
               <p>Please feel free to explore my portfolio to find out more about my projects and experiences below!</p>
             </div>
             <div className='flex justify-center mt-10'>
-              <a href="Ryuji_Jie_Si_KOW_Resume.pdf" alt="pdf" className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-5 rounded-full inline-flex items-center mx-4'>Resume PDF</a>
+              <a href="Ryuji_Kow_Jie_Si_Resume.pdf" alt="pdf" className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-5 rounded-full inline-flex items-center mx-4'>Resume PDF</a>
               <a href="Ryuji's Projects.pdf" alt="projects pdf" className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-5 rounded-full inline-flex items-center mx-4'>Projects PDF</a>
               <a href="https://github.com/Ryujikjs" className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-14 rounded-full inline-flex items-center mx-4'>
                 <svg
