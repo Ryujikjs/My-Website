@@ -176,7 +176,7 @@ export default function Home() {
                 <div className=''>
                   <h2 className='text-2xl font-bold'>Purely Natural Skincare </h2>
                   <p>Co-Founder</p>
-                  <p>June 2023 - Present</p>
+                  <p>June 2023 - June 2024</p>
                 </div>
               </div>
               <p>At Purely, I've led the development of Shopify, Facebook, Instagram, and Shopee platforms, enhancing the customer experience and driving sales. I've also played a key role in shaping branding and marketing strategies. Additionally, I've managed supply chain operations, optimizing inventory control and logistics for efficiency. </p>
@@ -234,7 +234,7 @@ export default function Home() {
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <h2 className='text-2xl font-bold'>AUTOCARE</h2>
               <p className='italic'>NUS EG3301R Ideas to Proof-of-Concept</p>
-              <p className='italic'>January 2023 - Present</p>
+              <p className='italic'>January 2023 - November 2023</p>
               <p> Autonomous Solution for Transport of Blood Components Within a Hospital Environment</p>
               <div className='flex justify-center'>
                 <Image src={robot} alt="Autocare" height={300} className='rounded-xl justify-center my-8 mx-3' />
